@@ -16,7 +16,7 @@ body {
   border-radius: 20px 0px 0px 20px;
   margin-left: 0px;
   margin-top: -0.5px;
-  height: -webkit-fill-available;
+  height:501px;
 }
 
 #productimage #phoneimage{display: none;}
