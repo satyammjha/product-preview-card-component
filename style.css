@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat&display=swap");
+
+body {
+  background-color: hsl(212, 21%, 14%);
+}
+#container {
+  display: flex;
+  background-color: aliceblue;
+  width: 692px;
+  border-radius: 20px;
+  height: 514px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#productimage img {
+  border-radius: 20px 0px 0px 20px;
+  margin-left: 0px;
+  margin-top: -0.5px;
+  height: -webkit-fill-available;
+}
+
+#productimage #phoneimage{display: none;}
+#rightside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+}
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 38px;
+  margin-top: -8px;
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  color: hsl(228, 12%, 48%);
+  margin-top: 35px;
+}
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  line-height: 28px;
+  margin-top: -6px;
+}
+#prices {
+  display: flex;
+  align-items: center;
+}
+#newprice {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+#oldprice {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: hsl(228, 12%, 48%);
+  margin-left: 16px;
+  text-decoration-line: line-through;
+  margin-top: 2px;
+}
+
+#btn {
+  align-items: center;
+  padding: 12px;
+  width: 20px;
+  background-color: hsl(158, 36%, 37%);
+  width: 90%;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  margin-top: 23px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+#carticon {
+  margin-left: 5px;
+  margin-right: 11px;
+}
+#btn:hover{background-color: hsl(158, 35%, 29%);}
+
+/*CSS for phone*/
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  #container{display: flex;flex-direction: column;width: 350px;height: 659px;align-items: center;margin-left: 5px;}
+  #container #productimage #desktopimg{display: none;}
+  #productimage #phoneimage{display: block;height: 246px;border-radius: 20px 20px 0px 0px;}
+  h1 br{display: none;}
+  h1{font-size: 36px;
+    margin-top: -23px;}
+
+    #rightside{margin-left: 27px;}
+    h5{margin-top: 18px;}
+    p{font-size: 16px;margin-top: -11px;}
+    p br{display: none;}
+    h5{
+      font-size: 16px;
+      letter-spacing: 3px;}
+}
